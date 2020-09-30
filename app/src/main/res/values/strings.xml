@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Contador</string>
+    <string name="txt_contador">0</string>
+    <string name="toast">A MERENDAAAR!!</string>
+    <string name="hola">RIS RAS RIS RAS</string>
+    <string name="llevas_100"> Llevas 100 broder</string>
+    <string name="txt_saludo">Hola a todos</string>
+</resources>

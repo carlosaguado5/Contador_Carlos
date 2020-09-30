@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btmerendar"
+        android:onClick="mostrarMensaje"
+        android:layout_width="0dp"
+        android:layout_height="83dp"
+        android:background="#F44336"
+        android:lineSpacingExtra="8sp"
+        android:text="@string/toast"
+        android:textColor="@android:color/background_light"
+        android:textSize="36sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btcontador"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="#F44336"
+        android:text="@string/hola"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:onClick="IncrementarContador"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textcontador"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="@string/txt_contador"
+        android:textSize="300sp"
+        app:layout_constraintBottom_toTopOf="@+id/btcontador"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btmerendar" />
+</androidx.constraintlayout.widget.ConstraintLayout>
